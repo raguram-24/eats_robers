@@ -1,0 +1,114 @@
+.header{
+    background: linear-gradient(0deg, #121212 0%, rgba(57, 56, 56, 0.68) 47.20%, rgba(61, 56, 56, 0.46) 53.62%, rgba(67, 50, 50, 0.31) 69.20%, #121212 98.90%),url("../../img/home2.jpg");
+    background-size: 100% 100Vh;
+    background-size: cover;
+   
+    .top{
+    display: flex;
+    justify-content: space-between;
+
+    .wrapper{
+     padding: 40px;
+        display: flex;
+        align-items: center;
+    
+
+        .logo{
+            height: 70px;
+
+        }
+         .title{
+             color: #96704E;
+             font-family: Joti One;
+             font-size: 50px;
+             font-style: normal;
+             font-weight: 400;
+             line-height: normal;
+             position: absolute;
+             left: 120px;
+         }
+        }}
+
+        .topbutton{
+            padding: 40px;
+            button{
+                padding: 16px 24px;
+                margin: 8px;
+                border-radius: 12px;
+                font-size: 16px;
+
+            }
+            .sign_in{
+              background-color: #603814;
+              color: white;
+              border:solid #603814;
+
+              &:hover{
+                background-color: white;
+                color: #603814;
+                border: solid #603814;
+              }
+            }
+            
+            .sign_up{
+                background-color: white;
+                color: #603814;
+                border: solid #603814;
+
+                &:hover{
+                background-color: #603814;
+                color: white;
+                border:solid #603814;
+                }
+            }
+             
+        }
+        .contant{
+            backdrop-filter: blur(2px);
+            text-align: center;
+            padding: 20px;
+        
+            input{
+                text-align: center;
+               padding: 16px 350px 16px 16px;
+               border-radius: 15px 0 0 15px;
+               border: none;
+            }
+      
+
+
+                .search{
+                    display: inline;
+                    // height: 25px;
+                    // width: 25px;
+                    color: white;
+                    border:#603814 ;
+                    background-color: #603814;
+                    padding: 11px 16px 16px 16px;
+                    border-radius:0 15px 15px 0 ;
+
+                }
+            
+           
+            h1{
+                     color:white;
+            }
+            h2{
+                color:white;
+               
+            }
+            .sicon{
+                color: white;
+                size: 10px;
+                margin: 0px 10px;
+               height: 20px;
+               width: 20px;
+               padding: 5px;
+               border: solid white ;
+               border-radius: 5px;
+               
+            }
+        }
+
+
+    }
