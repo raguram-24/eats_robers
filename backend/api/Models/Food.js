@@ -7,7 +7,7 @@ const foodSchema = mongoose.Schema({
         required:[true , 'FoodName is required']},
     type:{type:String,required:true},
     price : {type:Number,required:true},
-    image : {type:String,required : true}
+    // image : {type:String,required : true}
     
     
     

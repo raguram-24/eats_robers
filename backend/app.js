@@ -19,7 +19,7 @@ app.use(bodyParser.json());
 app.use(express.static('public'));
 app.use(cors())
 
-mongoose.connect('mongodb+srv://eatsrober:eatsrober@cluster0.hdo2zpc.mongodb.net/?retryWrites=true&w=majority')
+mongoose.connect(process.env.MONGO_URI);
   
 
 app.use('/user', userRoutes)
