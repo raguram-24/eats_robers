@@ -2,6 +2,9 @@ const mongoose = require ('mongoose');
 const User = require('../Models/User');
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
+const dotenv = require('dotenv');
+dotenv.config();
+
 
 exports.user_get_all = async (req, res, next) => {
     try {
@@ -34,7 +37,7 @@ exports.createUser = async (req, res, next) => {
         const hashedPassword = await bcrypt.hash(req.body.password, 10);
   
         const newUser = new User({
-          _id: mongoose.Types.ObjectId(),
+          _id: new mongoose.Types.ObjectId(),
           name: req.body.name,
           phonenumber: req.body.phonenumber,
           email: req.body.email,
@@ -75,7 +78,7 @@ exports.createUser = async (req, res, next) => {
       if (passwordMatch) {
         const token = jwt.sign(
           {
-            phonenumber: user.phonenumber,
+            email: user.email,
             userId: user._id,
           },
           process.env.JWT_KEY,
