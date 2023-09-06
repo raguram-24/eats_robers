@@ -3,6 +3,7 @@ const app = express();
 const morgan = require('morgan');
 const bodyParser = require ('body-parser');
 const mongoose = require('mongoose');
+require('dotenv').config();
 
 
 const userRoutes = require('./api/Routes/user')
@@ -18,7 +19,7 @@ app.use(bodyParser.json());
 app.use(express.static('public'));
 app.use(cors())
 
-mongoose.connect('mongodb+srv://eatsrober:<eatsrober>@cluster0.hdo2zpc.mongodb.net/?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://projectadmin:${process.env.MONGO_PW}@cluster0.shltgex.mongodb.net/?retryWrites=true&w=majority')
   
 
 app.use('/user', userRoutes)
