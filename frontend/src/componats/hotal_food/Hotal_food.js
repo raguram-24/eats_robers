@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import "./hotal_food.scss"
+import "./hotal_food.css"
 import img from "../../img/Food1.jpg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart,faPlus } from '@fortawesome/free-solid-svg-icons';

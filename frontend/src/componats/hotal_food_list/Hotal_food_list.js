@@ -1,6 +1,6 @@
 import React from 'react'
 import Hotal_food from '../hotal_food/Hotal_food'
-import "./hotal_food_list.scss"
+import "./hotal_food_list.css"
 
 
 function Hotal_food_list() {

@@ -8,26 +8,6 @@ const Restaurant = require('../Models/Restaurant');
 
 
 
-exports.food_get_by_restId = async (req, res, next) => {
-    try {
-      const docs = await Food.find()
-        .select('name price _id type image')
-        .exec();
-  
-      const response = {
-        count: docs.length,
-        food: docs,
-      };
-  
-      res.status(200).json(response);
-    } catch (err) {
-      console.log(err);
-      res.status(500).json({
-        error: err,
-      });
-    }
-  };
-
   exports.food_get_all = async (req, res, next) => {
     try {
       const queryObj = { ...req.query };
@@ -65,18 +45,7 @@ exports.food_get_by_restId = async (req, res, next) => {
       });
   
       const foodRes = await food.save();
-  
-      const resRes = await Restaurant.findById(req.body.restaurantId).exec();
-      let foodArray = resRes.food || [];
-      let fooJson = { food: foodRes._id };
-      console.log(foodRes._id);
-      foodArray.push(fooJson);
-      console.log(foodArray, fooJson);
-  
-      await Restaurant.findByIdAndUpdate(req.body.restaurantId, { food: foodArray }).exec();
-  
-      console.log("Restaurant Updated");
-  
+
       res.status(200).json({
         createdProduct: foodRes,
         message: "Food Item has been Added",

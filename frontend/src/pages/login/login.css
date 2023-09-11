@@ -1,4 +1,4 @@
-// styles.scss
+/*styles.scss*/
 @import url('https://fonts.googleapis.com/css2?family=Joti+One&display=swap');
 
 .login{
@@ -16,7 +16,7 @@
         padding: 40px;
            display: flex;
            align-items: center;
-        //    justify-content: space-between;
+           /*  justify-content: space-between;*/
 
            .logo{
                height: 70px;

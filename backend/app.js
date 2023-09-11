@@ -23,9 +23,9 @@ mongoose.connect(process.env.MONGO_URI);
   
 
 app.use('/user', userRoutes)
-// app.use('/foods',foodRoutes)
-// app.use('/restaurants',restaurantRoutes)
-// app.use('/order',orderRoutes);
+app.use('/foods',foodRoutes)
+app.use('/restaurants',restaurantRoutes)
+app.use('/order',orderRoutes);
 
 
 app.use((req,res,next)=>{

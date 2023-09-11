@@ -1,4 +1,4 @@
-import "./login.scss"
+import "./login.css"
 import logo from "../../img/logo.png"
 
 

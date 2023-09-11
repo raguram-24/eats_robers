@@ -1,5 +1,5 @@
 import React from 'react'
-import "./order.scss"
+import "./order.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart,faPlus,faLeftLong } from '@fortawesome/free-solid-svg-icons';
 

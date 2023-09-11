@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from "../../img/logo.png"
-import "./header.scss"
+import "./header.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF ,faInstagram,faYoutube,faTwitter} from '@fortawesome/free-brands-svg-icons';
 

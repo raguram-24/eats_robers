@@ -4,8 +4,7 @@ const Restaurant = require('../Models/Restaurant');
 exports.restaurant_get_all = async (req, res, next) => {
     try {
       const docs = await Restaurant.find()
-        .populate('food.food')
-        .exec();
+
   
       const response = {
         count: docs.length,
@@ -28,13 +27,12 @@ exports.restaurant_get_all = async (req, res, next) => {
         _id: new mongoose.Types.ObjectId(),
         name: req.body.name,
         phonenumber: req.body.phonenumber,
-        address: req.body.address,
-        food: req.body.food,
+        address: req.body.address
         // image: req.files[0].path
       });
   
       const result = await restaurant.save();
-  
+      
       console.log(result);
   
       res.status(200).json({
@@ -55,8 +53,6 @@ exports.restaurant_get_all = async (req, res, next) => {
   
       if (id.length === 24) {
         const result = await Restaurant.findById(id)
-          .populate('food.food')
-          .exec();
   
         if (!result) {
           return res.status(404).json({
