@@ -12,4 +12,6 @@ router.get('/:orderId' ,checkAuth,checkAdmin, OrderController.orders_get_order);
 
 router.delete('/:orderId',OrderController.orders_delete_order );
 
+router.patch("/:orderId", checkAuth,checkAdmin,OrderController.order_patch);
+
 module.exports = router;

@@ -63,6 +63,41 @@ exports.orders_get_order = async (req, res, next) => {
 }
 
 
+exports.order_patch = async (req, res, next) => {
+    try {
+      const id = req.params.order_Id;
+  
+      if (id.length === 24) {
+        const result = await Order.findById(id).exec();
+  
+        if (!result) {
+          return res.status(400).json({
+            message: "Order not found",
+          });
+        }
+  
+        const update = req.body;
+        const updatedVersion = await Order.findByIdAndUpdate(id, update).exec();
+  
+        console.log(updatedVersion);
+  
+        res.status(200).json({
+          message: "Order has been Updated",
+          result: updatedVersion,
+        });
+      } else {
+        return res.status(400).json({
+          message: "Invalid id",
+        });
+      }
+    } catch (err) {
+      console.log(err);
+      res.status(500).json({
+        error: err,
+      });
+    }
+  };
+
 
 exports.orders_delete_order = async (req, res, next) => {
     try {
