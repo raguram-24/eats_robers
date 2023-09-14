@@ -1,5 +1,5 @@
 .hotal_foot{
-    height: 220px;
+    height: 255px;
     width: 200px;
     background-color: rgb(210, 210, 210);
     border-radius: 15px;
@@ -14,11 +14,11 @@
         z-index: 2;
     }
     .food_name{
-        /*margin-left: 20px;*/
+        // margin-left: 20px;
         font-weight: 700;
     }
     .food_price{
-        /*margin-left: 20px;*/
+        // margin-left: 20px;
         font-weight: 700;
     }
     .food_like{
@@ -39,15 +39,17 @@
         color:red;
         cursor: pointer;
     }
+    a{
+        text-decoration: none;
+    }
     .food_Quantity{
         display: flex;
-        position: absolute;
-        top: 138px;
-        right: 0px;
+        justify-content: center;
         padding: 8px;
         color: white;
         background-color: black;
         border-color: white;
         cursor: pointer;
+        text-decoration: none;
     }
 }

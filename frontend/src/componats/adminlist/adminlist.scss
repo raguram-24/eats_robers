@@ -1,0 +1,47 @@
+.adminlist{
+    background-color: #cdcac8;
+    height: 40px;
+    display: flex;
+    
+    .name {
+        padding: 8px 13px;
+        width:20% ;
+        
+    }
+    .num {
+        padding: 8px 13px;
+        width: 15%;
+        
+    }
+    .address {
+        padding: 8px 13px;
+        width: 50%;
+        
+    }
+    .edit{
+        
+        width: 15%;
+        button{
+            width: 50%;
+            height: 100%;
+            
+        }
+        .update{
+            border: none;
+            background-color: green;
+        }
+        .delete{
+            border: none;
+            background-color: red;
+        }
+        
+        
+    }
+    div{
+        
+        border-left:solid white ;
+        border-top:solid white ;
+        color:#603814;
+    
+    }
+}

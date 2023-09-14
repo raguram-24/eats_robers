@@ -1,6 +1,6 @@
 import React from 'react';
 import Star from './Star';
-import "./rating.css"
+import "./rating.scss"
 function Restbox() {
   const completedStars = 3; // Number of completed stars
 

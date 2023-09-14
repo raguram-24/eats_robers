@@ -1,0 +1,42 @@
+.addfood{
+    background-image: url("../../../img/bg.jpg");
+    height: 100vh;
+      display: flex;
+      position: relative;
+      justify-content: center;
+      .addfoodform{
+          margin-top: 180px;
+          height: 260px;
+          padding: 60px;
+          background-color: white;
+          opacity: 0.8;
+          border-radius: 10px;
+          label{
+             font-weight: 600;
+          }
+          input{
+           
+            width: 250px;
+            height: 30px;
+            margin-bottom: 10px;
+          }
+          .submit{
+            margin-top: 20px;
+            background-color: black;
+            color: white;
+          }
+          button{
+           
+                width: 100%;
+                height: 30px;
+                font-weight: 600;
+                margin: 3px;
+  
+                a{
+                  color: black;
+                  text-decoration: none;
+                }
+                
+          }
+      }
+  }

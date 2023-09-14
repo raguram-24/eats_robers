@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import "./hotal_food.css"
+import "./hotal_food.scss"
 import img from "../../img/Food1.jpg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart,faPlus } from '@fortawesome/free-solid-svg-icons';
@@ -13,7 +13,7 @@ function Hotal_food() {
             </div>
             <FontAwesomeIcon icon={faHeart}  onClick={ ()=>Setheart(!heart)} className={heart===false?'food_like':'food_likes'}/>
             
-            <FontAwesomeIcon icon={faPlus}  className='food_Quantity'/>
+           
             
             <div className='food_name'>
                Ring loader
@@ -21,6 +21,7 @@ function Hotal_food() {
            <div className='food_price'>
                LKR1,590.00
            </div>
+           <a href='/order'><span className='food_Quantity'>order</span></a>
             
         </div>
     )

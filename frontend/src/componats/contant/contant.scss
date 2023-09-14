@@ -1,0 +1,19 @@
+.contant{
+    .contant1{
+        display: flex;
+        justify-content: center;
+        object-fit: cover;
+        .contant2{
+            width: 30%;
+            object-fit: cover;
+
+            img:hover{
+                object-fit: fill;
+                width: 99%;
+                height: 99%;
+                filter: brightness(0.5);
+
+            }
+        }
+    }
+}

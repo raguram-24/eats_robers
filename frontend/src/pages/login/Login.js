@@ -1,4 +1,4 @@
-import "./login.css"
+import "./login.scss"
 import logo from "../../img/logo.png"
 
 
@@ -8,7 +8,7 @@ function Login() {
             <div className="top">
                 <div className="wrapper">
                 <img className="logo" src={logo}/>
-                <p className="title">EatsRobar</p>
+                <p className="title"><a href='/'>EatsRober</a></p>
                 </div>
                 
             </div>

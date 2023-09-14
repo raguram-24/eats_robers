@@ -1,0 +1,47 @@
+.Hotelhome{
+    .a a{
+        border: solid;
+        padding: 10px 20px;
+    }
+    .Hotelhomeheader{
+        margin-top: 5px;
+        background-color: black;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        text-align: left;
+        align-items: center;
+
+        .name {
+            
+            width:20% ;
+            
+        }
+        .num {
+            
+            width: 15%;
+            
+        }
+        .address {
+            
+            width: 50%;
+            
+        }
+        .edit{
+            
+            width: 13.5%;
+            
+            
+        }
+        div{
+            padding: 12px;
+            border-left: solid #96704E;
+
+            color: #96704E;
+        }
+    }
+    a{
+        color: black;
+        text-decoration: none;
+    }
+}

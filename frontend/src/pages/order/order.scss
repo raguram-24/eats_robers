@@ -17,4 +17,72 @@
         color: #603814;
         opacity: 0.5;
     }
+    .orderinside{
+        margin: 0 10%;
+        // border: solid #603814;
+        width: 80%;
+        height: 280px;
+        display: flex;
+        justify-content: space-between;
+        
+
+        div{
+            margin: 2px;
+            width: 30%;
+            position: relative;
+
+            .cal{
+                position:absolute;
+                bottom: 0;
+                right: 0;
+            }
+        }
+
+        h1{
+            margin: 0 5px;
+        }
+        img{
+            height: 250px;
+            width: 250px;
+            margin: 0 5px;
+        }
+        .add{
+            border: solid #603814 ;
+            border-radius: 8px;
+            padding: 8px 16px;
+            font-weight: 700;
+            color: white;
+            background-color: #603814;
+            margin: 4px;
+        }
+        h3{
+            text-align: right;
+            margin: 6px 10px;
+            
+        }
+      
+    }
+
+    .orderbutton{
+        display: flex;
+        justify-content: right;
+        margin-right: 10%;
+        .orderbuy{
+            border: solid #603814 ;
+            border-radius: 8px;
+            padding: 8px 16px;
+            font-weight: 700;
+            color: white;
+            background-color: #603814;
+            margin: 4px;
+        }
+        .cancel{
+            border: solid #603814  ;
+            border-radius: 8px;
+            padding: 8px 16px;
+            font-weight: 700;
+            color: #603814;
+            margin: 4px;
+        }
+    }
 }

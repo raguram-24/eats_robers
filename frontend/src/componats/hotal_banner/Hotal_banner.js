@@ -1,6 +1,6 @@
 import React from 'react'
 import img from "../../img/kfg.jpg"
-import "./hotal_banner.css"
+import "./hotal_banner.scss"
 
 function Hotal_banner() {
     return (

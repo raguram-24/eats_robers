@@ -1,4 +1,4 @@
-import "./signup.css"
+import "./signup.scss"
 import logo from "../../img/logo.png"
 
 
@@ -8,7 +8,7 @@ function Signup() {
             <div className="top">
                 <div className="wrapper">
                 <img className="logo" src={logo}/>
-                <p className="title">EatsRobar</p>
+                <p className="titles">EatsRober</p>
                 </div>
                 
             </div>
