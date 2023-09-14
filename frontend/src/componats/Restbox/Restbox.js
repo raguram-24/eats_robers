@@ -9,6 +9,7 @@ function Restbox() {
     const completedStars = 3;
     return (
         <div className='restbox'>
+            <a href='/food'>
             <div><img src={img}/></div>
             <div ><FontAwesomeIcon icon={faHeart} className='heart'/></div>
             {/* <div><FontAwesomeIcon icon={faPlus}  className='plus'/></div> */}
@@ -18,6 +19,7 @@ function Restbox() {
                  ))}
              </div>
             <div><h3>KFC</h3></div>
+            </a>
         </div>
     )
 }

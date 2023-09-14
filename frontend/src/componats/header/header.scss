@@ -41,6 +41,7 @@
         .topbutton{
             display: flex;
             padding: 40px;
+            align-items: center;
             .nav{
                 margin-right: 70px;
                 display: flex;
@@ -58,10 +59,11 @@
                 }
             }
             button{
-                padding: 16px 24px;
+                padding: 10px 20px;
                 margin: 8px;
                 border-radius: 12px;
                 font-size: 16px;
+                cursor: pointer;
 
             }
             .sign_in{
@@ -109,16 +111,19 @@
                     background-color: #603814;
                     padding: 11px 16px 16px 16px;
                     border-radius:0 15px 15px 0 ;
+                    cursor: pointer;
 
                 }
             
            
             h1{
                      color:white;
-            }
-            h2{
-                color:white;
-               
+                     margin: 14px;
+                     text-transform: uppercase;
+
+                     span{
+                        color: #96704E;
+                     }
             }
             .sicon{
                 color: white;

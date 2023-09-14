@@ -3,14 +3,11 @@
         display: flex;
         justify-content: center;
         object-fit: cover;
-        .contant2{
-            width: 30%;
-            object-fit: cover;
+        .contant2 img{
+            width: 400px;
+            height: 400px;
 
-            img:hover{
-                object-fit: fill;
-                width: 99%;
-                height: 99%;
+            &:hover{
                 filter: brightness(0.5);
 
             }

@@ -1,25 +1,27 @@
-.adminlist{
+.userlist{
     background-color: #cdcac8;
     height: 40px;
     display: flex;
     margin-top: 5px;
    align-items: center;
     
-    
-    .name {
+    .names {
         margin-left: 10px;
-        width:20% ;
+        width:15%;
         
     }
-    .num {
+    .mails{
+        width: 15%;    
+        }
+    .nums {
         width: 15%;
         
     }
-    .address {
-        width: 50%;
+    .addresses {
+        width: 40%;
         
     }
-    .edit{
+    .edits{
         display: flex;
         justify-content: center;
         width: 15%;
@@ -38,10 +40,9 @@
             color: white;
         }
     }
-        
-        
+   
+
     div{
-        
         color:#603814;
     
     }

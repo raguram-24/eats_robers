@@ -1,5 +1,4 @@
-.admin{
-
+.user{
     .a{
         display: flex;
         justify-content: center;
@@ -16,47 +15,46 @@
             text-decoration: underline;
          }
      }
-    .adminheader{
-        background-color: #0B666A;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        text-align: left;
-        align-items: center;
+     .userheader{
+         background-color: #0B666A;
+         height: 50px;
+         display: flex;
+         align-items: center;
+ 
+         .name1 {
+             
+             width:15% ;
+             
+         }
+         .num1 {
+             width: 15%;
+             
+         }
+         .address1 {
 
-        .name {
-            
-            width:20% ;
-            
-        }
-        .num {
-            
-            width: 15%;
-            
-        }
-        .address {
-            
-            width: 50%;
-            
-        }
-        .edit{
-            
-            width: 15%;
-            
-            
-        }
-        div{
+             width: 40%;
+             
+         }
+         .mail1{
 
-            color:white
-        }
-    }
-    .add{
+             width: 15%;
+        .edit1{
+             width: 15%;
+        }  
+             
+         }
+         div{
+            
+ 
+             color:white
+         }
+     }
+     .add{
         display: flex;
         justify-content: center;
         text-decoration: none;
      }
-
-    .addbutton{
+     .addbutton{
         margin: 5px;
         padding: 8px 16px;
          text-decoration: none;
@@ -67,4 +65,4 @@
          border: none;
          
      }
-}
+ }

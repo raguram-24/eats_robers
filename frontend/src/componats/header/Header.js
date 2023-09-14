@@ -24,9 +24,6 @@ function Header() {
                         <a href="/hotel">
                     <h3>Restaurant</h3>
                     </a>
-                    <a href='/food'>
-                    <h3>Foods</h3>
-                    </a>
                     
                     </div>
                    <button className='sign_in' ><a href="/login">Sign In</a></button>
@@ -38,12 +35,11 @@ function Header() {
             <div className='contant'>
                 <input type='text' placeholder='Search for Restaurant'/>
                 <div className='search'>Search </div>
-                <h2>Favourite Fooditems Order  One Click</h2>
-                <h1>Order Anytime</h1>
-                <FontAwesomeIcon icon={faYoutube} className='sicon' />
+                <h1>Orders on <span>Click</span></h1>
+                {/* <FontAwesomeIcon icon={faYoutube} className='sicon' />
                 <FontAwesomeIcon icon={faTwitter} className='sicon'/>
                 <FontAwesomeIcon icon={faFacebookF} className='sicon'/>
-                <FontAwesomeIcon icon={faInstagram} className='sicon'/>
+                <FontAwesomeIcon icon={faInstagram} className='sicon'/> */}
 
             </div>
         </div>

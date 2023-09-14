@@ -14,11 +14,12 @@ function Login() {
             </div>
             <div className="container">
                 <form>
-                   <h1>Sign In</h1> 
+                   <h1>Login</h1> 
                    <input type="email" placeholder="Email or Phone number"/>
                    <input type="password" placeholder="Password"/>
-                   <button className="loginbutton">Sign In</button>
-                   <span>New to EatsRober ? <b> Sign up now</b></span>
+                   <button className="loginbutton">submit</button>
+                   <span>New to EatsRober ? <b> <a href="/signup">Sign up now</a></b>
+                   <b><a href="/"><br/>Back</a></b></span>
                 </form>
             </div>
         </div>

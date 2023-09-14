@@ -10,20 +10,22 @@ function Hotelhome() {
             
             <Header/>
             <div className='a'>
-                <a href='/admin'>Restaurant list</a>
-                <a href='/Hotelowner'>Food list</a>
+                <a href='/admin'>Restaurant </a>
+                <a href='/Hotelowner'>Food </a>
+                <a href='/user'>Customer</a>
             </div>
             <div className='Hotelhomeheader'>
                  <div className='name'>Food Name</div>
-                 <div className='num'>Price</div>
-                 <div className='address'>Ingredients</div>
-                 <div className='edit'>Edit</div>
+                 <div className='type'>Type</div>
+                 <div className='price'>Price</div>
+                 
+                 <div className='edit'></div>
             </div>
             <Foodlist/>
             <Foodlist/>
             <Foodlist/>
             <Foodlist/>
-           <button ><a href="/addfood">Add</a></button>
+            <a href="/addfood"  className='add'><button className='addbutton' >Add</button></a>
         </div>
     )
 }

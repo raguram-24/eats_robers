@@ -7,10 +7,11 @@ function Addfood() {
             <form className='addfoodform'>
                 <label>Food Name</label><br/>
                 <input type='text'/><br/>
+                <label>Type</label><br/>
+                <input type='text'/><br/>
                 <label>Price</label><br/>
                 <input type='text'/><br/>
-                <label>Ingredients</label><br/>
-                <input type='text'/><br/>
+                
                 <button type='submit' className='submit'>Submit</button>
                 <button ><a href="/hotelowner" >Back</a></button>
             </form>

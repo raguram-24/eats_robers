@@ -6,8 +6,9 @@ function Foodlist() {
         <div>
              <div className='foodlist'>
             <div className='name'>Food Name</div>
-                 <div className='num'>Price</div>
-                 <div className='address'>Ingredients</div>
+            <div className='type'>Type</div>
+                 <div className='price'>Price</div>
+                 
                  <div className='edit'> <button className='update'>Update</button>
                  <button className='delete'>Delete</button></div>
             </div>

@@ -8,7 +8,7 @@ function Signup() {
             <div className="top">
                 <div className="wrapper">
                 <img className="logo" src={logo}/>
-                <p className="titles">EatsRober</p>
+                <p className="titles"><a href="/login">EatsRober</a></p>
                 </div>
                 
             </div>
@@ -19,7 +19,9 @@ function Signup() {
                    <input type="text" placeholder="Mobile number"/>
                    <input type="password" placeholder="Password"/>
                    <button className="loginbutton">Let's Start</button>
-                   <span>All ready have accound of EatsRober ? <b> Sign in now</b></span>
+                   <span>All ready have accound of EatsRober ? <b><a href="/login"> Sign in now</a></b>
+                   <b><a href="/"><br/>Back</a></b>
+                   </span>
                 </form>
             </div>
         </div>

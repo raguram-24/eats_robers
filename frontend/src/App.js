@@ -13,6 +13,7 @@ import Adminhome from './pages/adminpage/adminhome/Adminhome';
 import Addrest from './pages/adminpage/AddRest/Addrest';
 import Hotelhome from './pages/Hotelpage/Hotelhome/Hotelhome';
 import Addfood from './pages/Hotelpage/Addfood/Addfood';
+import User from './pages/user/User';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/addrest" element={<Addrest/>}/>
           <Route path="/hotelowner" element={<Hotelhome/>}/>
           <Route path="/addfood" element={<Addfood/>}/>
+          <Route path="/user" element={<User/>}/>
           
         </Routes>
       </Router>
