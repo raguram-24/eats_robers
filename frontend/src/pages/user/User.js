@@ -23,8 +23,6 @@ function User() {
                  
             </div>
            <Userlist/>
-           <Userlist/>
-           <Userlist/>
 
            <a href="/addrest"  className='add'><button className='addbutton' >Add</button></a>
         </div>

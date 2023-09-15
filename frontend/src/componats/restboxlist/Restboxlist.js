@@ -13,13 +13,7 @@ function Restboxlist() {
             <Header/>
             <div className="wrapper">
                 <div className="container" >
-                   <Restbox />
-                   <Restbox />
-                   <Restbox />
-                   <Restbox />
-                   <Restbox />
-                   <Restbox />
-                   <Restbox />
+                   <Restbox/>
                 </div>
             </div>
         </div>

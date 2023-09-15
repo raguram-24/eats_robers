@@ -4,6 +4,7 @@ import Header from '../../../componats/header/Header'
 import Adminlist from '../../../componats/adminlist/Adminlist'
 
 function Adminhome() {
+    
     return (
         <div className='admin'>
             <Header/>

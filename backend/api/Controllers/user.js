@@ -34,7 +34,10 @@ exports.createUser = async (req, res, next) => {
           message: "User already exists",
         });
       } else {
-        const hashedPassword = await bcrypt.hash(req.body.password, 10);
+        const saltRounds = 10;
+        const salt = await bcrypt.genSalt(saltRounds)
+        
+        const hashedPassword = await bcrypt.hash(req.body.password,salt);
   
         const newUser = new User({
           _id: new mongoose.Types.ObjectId(),
@@ -81,7 +84,7 @@ exports.createUser = async (req, res, next) => {
             email: user.email,
             userId: user._id,
           },
-          process.env.JWT_KEY,
+          "secret",
           {
             expiresIn: '1h',
           }
@@ -128,7 +131,7 @@ exports.createUser = async (req, res, next) => {
   };
 
   //Update a User
-  exports.restaurant_patch = async(req,res,next)=>{ 
+  exports.user_patch = async(req,res,next)=>{ 
     const id = req.params.restaurantId 
     if(id.length === 24){//req.body is not iterable
     const user = await User.findById(id)
