@@ -1,16 +1,92 @@
 .contant{
+    // color: #603814;
     .contant1{
+        margin-left: 5%;
+        margin-top: 25px;
+        display: flex;
+       .image{
         display: flex;
         justify-content: center;
-        object-fit: cover;
-        .contant2 img{
-            width: 400px;
-            height: 400px;
+         width: 42%;
+           img{
+            width: 100%;
+            border-radius: 4px;
 
-            &:hover{
-                filter: brightness(0.5);
+           }
+       }
+       .text{
+            width: 52%;
+            h1{
+                padding: 10px;
+            }
+            p{
+                padding: 20px 25px;
+            }
+       }
+        
+    }
+
+    .contact{
+        background-color: #d2d2d2;
+        display: flex;
+        flex-direction: column;
+
+        h1{
+               text-align: center;
+        }
+        .social{
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             text-align: center;
+
+            .sicon{
+                color: black;
+                size: 10px;
+                margin: 0px 10px;
+               height: 20px;
+               width: 20px;
+               padding: 5px;
+               border: solid black ;
+               border-radius: 5px;
+               
+            }
+        }
+        .contactmedia{
+            display: flex;
+            justify-content: space-around;
+            .media{
+                margin-bottom: 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+
+                .icon{
+                    height: 60px;
+                }
+                p{
+                    font-weight: 700;
+                    margin: 4px;
+                }
 
             }
+        }
+        
+    }
+    .footer{
+        height: 40px;
+        background-color: black;
+        color: white;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+        .i{
+            height: 18px;
+            margin-left: 4px;
+            margin-right: 4px;
         }
     }
 }
